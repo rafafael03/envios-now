@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_busca_entregas"
+            android:icon="@drawable/ic_encomendas_24"
+            android:title="@string/menu_busca_entregas" />
+        <item
+            android:id="@+id/nav_minhas_entregas"
+            android:icon="@drawable/ic_map_24"
+            android:title="@string/menu_minhas_entregas" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_pessoa_24"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_24"
+            android:title="@string/menu_info" />
+    </group>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffdb15</color>
+    <color name="colorPrimaryDark">#f3d215</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="cinzinha_mais_claro">#EBEBEB</color>
+    <color name="corSecundaria">#001968</color>
+    <color name="cor_texto_branco">#ffffff</color>
+    <color name="cor_fundo_branco">#ffffff</color>
+</resources>

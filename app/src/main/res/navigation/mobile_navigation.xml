@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_busca_entregas">
+
+    <fragment
+        android:id="@+id/nav_busca_entregas"
+        android:name="com.prototipo.enviosnow.activity.ui.buscaencomendas.BuscaEncomendasFragment"
+        android:label="@string/menu_busca_entregas"
+        tools:layout="@layout/fragment_busca_encomendas" />
+
+    <fragment
+        android:id="@+id/nav_minhas_entregas"
+        android:name="com.prototipo.enviosnow.activity.ui.entregas.MinhasEntregasFragment"
+        android:label="@string/menu_minhas_entregas"
+        tools:layout="@layout/fragment_minhas_entregas" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.prototipo.enviosnow.activity.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.prototipo.enviosnow.activity.ui.info.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>

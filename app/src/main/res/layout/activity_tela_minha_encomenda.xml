@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_fundo_branco"
+    tools:context=".activity.TelaMinhaEncomendaActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toTopOf="@+id/textDescricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pacote" />
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:padding="@dimen/paddin_padrao"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textRemetente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textRemetente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:padding="@dimen/paddin_padrao"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textDestinatario"
+        app:layout_constraintEnd_toEndOf="@+id/textDescricao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/textDescricao" />
+
+    <TextView
+        android:id="@+id/textDestinatario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:padding="@dimen/paddin_padrao"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textContatoDestinatario"
+        app:layout_constraintEnd_toEndOf="@+id/textRemetente"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textRemetente"
+        app:layout_constraintTop_toBottomOf="@+id/textRemetente" />
+
+    <TextView
+        android:id="@+id/textContatoDestinatario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:padding="@dimen/paddin_padrao"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoAbrirLocalColeta"
+        app:layout_constraintEnd_toEndOf="@+id/textDestinatario"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textDestinatario"
+        app:layout_constraintTop_toBottomOf="@+id/textDestinatario" />
+
+    <Button
+        android:id="@+id/botaoAbrirLocalColeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:text="Ver local coleta"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConfirmarEntrega"
+        app:layout_constraintEnd_toStartOf="@+id/botaoAbrirLocalEntrega"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textContatoDestinatario" />
+
+    <Button
+        android:id="@+id/botaoAbrirLocalEntrega"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:text="Ver local Entrega"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoAbrirLocalColeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoAbrirLocalColeta"
+        app:layout_constraintTop_toTopOf="@+id/botaoAbrirLocalColeta" />
+
+    <Button
+        android:id="@+id/botaoConfirmarEntrega"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fundo_redondo_com_bordas"
+        android:text="Confirmar entrega"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/botaoAbrirLocalEntrega"
+        app:layout_constraintStart_toStartOf="@+id/botaoAbrirLocalColeta"
+        app:layout_constraintTop_toBottomOf="@+id/botaoAbrirLocalColeta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

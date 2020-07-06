@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity2">
+
+    <item
+        android:id="@+id/itemSair"
+        android:orderInCategory="200"
+        android:title="Sair"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemCriarEncomenda"
+        android:orderInCategory="100"
+        android:title="Criar encomenda"
+        app:showAsAction="never" />
+</menu>
